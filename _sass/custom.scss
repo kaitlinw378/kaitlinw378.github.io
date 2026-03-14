@@ -472,3 +472,70 @@ pre, code, .highlight {
 hr {
     margin-right: 2.5rem;
 }
+
+/* Code block container */
+div.language-bash.highlighter-rouge {
+    padding: 0 !important;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.125);
+    // border-color: #8d7cd8;
+}
+
+code {
+    color: #ff79c6;
+    font-family: monospace;
+    font-size: 1.25em;
+}
+
+pre > code {
+    color: #ff79c6;
+}
+
+div.highlighter-rouge::before, figure.highlight::before {
+    background-color: #2c2c44;
+    content: "\f121";
+    margin-top: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+/* normalize code indentation inside lists */
+ol div.highlighter-rouge pre,
+ol pre {
+    text-indent: -0.75rem;   /* pull text to the left */
+    padding-left: 0.75rem;   /* keep overall padding consistent */
+}
+
+div.highlighter-rouge pre,
+pre {
+    text-indent: -0.75rem;   /* pull text to the left */
+    padding-left: 0.25rem;   /* keep overall padding consistent */
+}
+
+code.language-plaintext.highlighter-rouge {
+    padding-right: 0;
+    padding-left: 0 !important;
+    background-color: #2c2c44;
+    color: #ff79c6;
+    border: none;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+article.page {
+    padding-right: 2rem;
+}
+
+article.page p {
+    text-align: justify;
+}
+
+article.page section.page__content p {
+    padding-right: 0 !important;
+    margin-right: 0.5rem !important;
+}
+
+article.page .page__content h2 {
+    margin-right: 0.5rem !important;
+}
